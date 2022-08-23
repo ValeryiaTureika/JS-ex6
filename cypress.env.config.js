@@ -4,8 +4,8 @@ module.exports = defineConfig({
     scripts: {
         "cy:run:chrome": "cypress run --browser chrome --headless",
         "cy:run:firefox": "cypress run --browser firefox --headless",
-        "cy:run:chromeMobile": "cypress run --browser chrome --config-file cypress.env.json --headed",
-        "cy:run:firefoxMobile": "cypress run --browser firefox --config-file cypress.env.json --headed",
+        "cy:run:chromeMobile": "cypress run --browser chrome --config-file cypress.env.config.js --headed",
+        "cy:run:firefoxMobile": "cypress run --browser firefox --config-file cypress.env.config.js --headed",
     },
     e2e: {
         baseUrl: 'http://localhost:3000',
